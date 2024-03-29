@@ -1,0 +1,55 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+  background-color: hsl(210, 36%, 96%);
+  color: #102a43;
+}
+
+/* Card style */
+
+.card-link {
+  text-decoration: none;
+  color: #102a43;
+}
+
+.card {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
+  padding: 12px;
+  max-width: 350px;
+  width: 350px;
+  border-radius: 12px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
+}
+
+.card .card-title {
+  font-size: 1.2rem;
+  margin: 4px 0 0 0;
+}
+
+.card .card-upper {
+  font-size: 1rem;
+  margin: 0;
+  color: hsl(209, 28%, 39%);
+  word-break: break-all;
+}
+
+@media (max-width: 400px) {
+  .card,
+  .card-link {
+    width: 100%;
+  }
+
+  .card .card-title {
+    font-size: 1rem;
+  }
+}

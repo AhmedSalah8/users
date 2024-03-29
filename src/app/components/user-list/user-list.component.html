@@ -1,0 +1,25 @@
+<!-- user-list.component.html -->
+<main class="main-list">
+  <a class="card-link" href="/user/{{ user?.id }}" *ngFor="let user of users">
+    <div class="card">
+      <p-avatar
+        image="{{ user?.avatar }}"
+        styleClass="mr-2"
+        size="xlarge"
+        shape="circle"
+      ></p-avatar>
+      <div class="card-details">
+        <p class="card-upper">{{ user?.email }}</p>
+        <h2 class="card-title">{{ user?.first_name }} {{ user?.last_name }}</h2>
+      </div>
+    </div>
+  </a>
+</main>
+<div class="pagination">
+  <p-paginator
+    [rows]="per_page"
+    [totalRecords]="total_users"
+    (onPageChange)="onPageChange($event)"
+  >
+  </p-paginator>
+</div>

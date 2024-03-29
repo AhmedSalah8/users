@@ -1,0 +1,35 @@
+.main-header {
+  background: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: transparent;
+  box-shadow: unset;
+}
+
+:host ::ng-deep .p-autocomplete-input {
+  width: 100%;
+}
+
+:host
+  ::ng-deep
+  .p-autocomplete-panel
+  .p-autocomplete-items
+  .p-autocomplete-item,
+:host ::ng-deep .p-autocomplete-panel .p-autocomplete-items {
+  padding: 0;
+}
+
+:host ::ng-deep .p-autocomplete-panel .p-autocomplete-items {
+  max-width: 320px;
+}
+
+@media (max-width: 360px) {
+  .card .card-upper {
+    display: none;
+  }
+}

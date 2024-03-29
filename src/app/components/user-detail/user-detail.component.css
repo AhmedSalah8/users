@@ -1,0 +1,30 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 46px;
+}
+
+.image-container img {
+  border: 2px solid #fff;
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
+}
+
+.user-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.user-detail .label {
+  color: hsl(209, 34%, 30%);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

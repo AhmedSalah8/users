@@ -1,0 +1,19 @@
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 24px;
+  padding: 100px 0 60px 0;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+:host ::ng-deep .p-paginator-last,
+:host ::ng-deep .p-paginator-first {
+  display: none;
+}

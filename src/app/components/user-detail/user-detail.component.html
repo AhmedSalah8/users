@@ -1,0 +1,38 @@
+<!-- user-detail.component.html -->
+<main class="main-detail">
+  <div class="image-container">
+    <img
+      src="{{ user?.avatar }}"
+      title="{{ user?.first_name }} + {{ user?.last_name }} Image"
+      alt="{{ user?.first_name }} + {{ user?.last_name }} Image"
+    />
+  </div>
+  <div class="user-detail">
+    <div>
+      <span class="label">ID:</span>
+      <span class="data"> {{ user?.id }}</span>
+    </div>
+    <div>
+      <span class="label">First Name:</span>
+      <span class="data"> {{ user?.first_name }}</span>
+    </div>
+    <div>
+      <span class="label">Last Name:</span>
+      <span class="data"> {{ user?.last_name }}</span>
+    </div>
+    <div>
+      <span class="label">Email:</span>
+      <span class="data"> {{ user?.email }}</span>
+    </div>
+  </div>
+</main>
+<footer>
+  <p-button
+    class="back-button"
+    label="Back"
+    (click)="goBack()"
+    [outlined]="true"
+  >
+    <i class="bi bi-arrow-left-short"></i>
+  </p-button>
+</footer>
