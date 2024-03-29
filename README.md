@@ -38,11 +38,11 @@ This App provides functionalities for displaying user lists, searching for users
 
 This is project demo link:
 
-[Demo Link](#)
+[Demo Link](https://users-psi-woad.vercel.app/)
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/`
+1. Clone the repository: `git clone https://github.com/AhmedSalah8/users`
 2. Navigate to the project directory: `cd project`
 3. Install dependencies: `npm install`
 
